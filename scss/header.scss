@@ -1,0 +1,43 @@
+@import 'config';
+
+.header {
+  position: relative;
+  display: flex;
+
+  min-height: 50vh;
+  margin-left: -$gutter;
+  margin-right: -$gutter;
+
+  background: transparent url(header.jpg) fixed no-repeat;
+  background-size: cover;
+
+
+
+  &__content {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: auto;
+
+
+
+    word-break: break-word;
+    text-align: center;
+  }
+
+
+  &__title {
+    margin-bottom: $gutter * 3;
+
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+
+
+  }
+}
+
+

@@ -1,0 +1,60 @@
+@import 'config';
+
+.article {
+    width: 100%;
+    max-width: 600px;
+
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+        
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #666;
+        margin-bottom: $gutter;
+       // min-height: 300px;
+        
+  
+      }
+
+    &__img {
+        
+        display: block;
+        width: 100%;
+        height: 100%;
+
+      }
+
+    &__content {
+        /*
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
+        flex: 1;
+        */
+    
+        //text-align: center;
+      }
+
+      &__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+    
+        margin-bottom: 10px;
+    
+        font-size: 1.5rem;
+      }
+
+      &__date {
+        font-size: 1.125rem;
+      }
+}

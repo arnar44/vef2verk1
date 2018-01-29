@@ -1,0 +1,15 @@
+// breytur fyrir mikið notaðar stærðir
+$max-width: 1200px;
+$gutter: 15px;
+
+$font-main: 'Open Sans', helvetica, arial, sans-serif;
+$font-heading: 'Roboto Slab', georgia, serif;
+
+// mixin sem reiknar nákvæmar prósentur útfrá dálkum
+@mixin columns($col: 1) {
+  // margföldum með "1%" til að breyta gildi í prósentu gildi
+  width: ($col / 12 * 100) * 1%;
+
+  padding-right: $gutter * 2;
+  padding-left: $gutter * 2;
+}

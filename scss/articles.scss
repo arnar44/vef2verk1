@@ -1,0 +1,41 @@
+@import 'config';
+
+.articles {
+    width: 100%;
+    max-width: $max-width;
+
+    margin: $gutter * 2 auto;
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        //margin: $gutter * 2;
+        /*
+        margin-right: -($gutter / 2);
+        margin-bottom: $gutter;
+        margin-left: -($gutter / 2); 
+        */
+    }
+
+    &__article {
+        @include columns(12);
+
+        display: flex;
+        justify-content: center;
+        min-height: 250px;    
+    
+        padding: $gutter * 2;
+    
+        @media (min-width: $max-width / 2) {
+          @include columns(6);
+          
+        }
+    
+        @media (max-width: $max-width / 2) {
+          @include columns(12);
+          min-height: 400px;
+        }
+        
+    }
+}

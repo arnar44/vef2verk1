@@ -1,0 +1,27 @@
+<%- include('header') -%>
+
+<section class="articles">
+    <div class="articles__row">
+      <% articles.forEach((articles) => { %>
+        <div class='articles__article'>
+            <a class="article" href=<%= '/' + articles['slug'] %>> 
+              
+                <div class="article__image">
+                  <img src=<%= articles['image'] %> class="article__image" alt="">
+                </div>
+                <div class="article__content">
+                  <h3 class="article__title"><%= articles['title'] %></h3>
+                  <p class="article__date"><%= articles['date'].getDate() + '.' + (Number(articles['date'].getMonth()) + 1) + '.' + articles['date'].getFullYear() %></p>
+                </div>
+              
+            </a>
+        </div>
+        
+        
+      <% }) %>
+    </div>
+
+</section>
+
+
+<%- include('footer') -%>

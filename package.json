@@ -1,16 +1,30 @@
 {
-  "name": "v1",
-  "version": "0.0.0",
-  "private": true,
+  "name": "vef2-2018-v1",
+  "version": "1.0.0",
+  "description": "Útfæra skal Express vefþjón sem birtir yfirlit yfir greinar úr möppu á disk og möguleika á að lesa hverja grein.",
+  "main": "app.js",
   "scripts": {
-    "eslint": "eslint *.js **/*.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./app.js",
+    "dev": "\"gulp default\""
   },
-  "devDependencies": {
-    "eslint": "^4.16.0",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vefforritun/vef2-2018-v1.git"
   },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vefforritun/vef2-2018-v1/issues"
+  },
+  "homepage": "https://github.com/vefforritun/vef2-2018-v1#readme",
   "dependencies": {
     "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "gulp": "^3.8.7",
+    "gulp-nodemon": "^1.0.4",
+    "gulp-sass": "^3.1.0"
   }
 }
