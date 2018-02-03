@@ -2,8 +2,8 @@
 $max-width: 1200px;
 $gutter: 15px;
 
-$font-main: 'Open Sans', helvetica, arial, sans-serif;
-$font-heading: 'Roboto Slab', georgia, serif;
+$font-main: 'Lora', helvetica, arial, sans-serif;
+$font-heading: 'Roboto', georgia, serif;
 
 // mixin sem reiknar nákvæmar prósentur útfrá dálkum
 @mixin columns($col: 1) {
