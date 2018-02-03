@@ -2,23 +2,26 @@
 
 <section class="articles">
     <div class="articles__row">
-      <% articles.forEach((articles) => { %>
-        <div class='articles__article'>
-            <a class="article" href=<%= '/' + articles['slug'] %>> 
-              
-                <div class="article__image">
-                  <img src=<%= articles['image'] %> class="article__image" alt="">
-                </div>
-                <div class="article__content">
-                  <h3 class="article__title"><%= articles['title'] %></h3>
-                  <p class="article__date"><%= articles['date'].getDate() + '.' + (Number(articles['date'].getMonth()) + 1) + '.' + articles['date'].getFullYear() %></p>
-                </div>
-              
-            </a>
-        </div>
         
-        
-      <% }) %>
+    
+        <% articles.forEach((article) => { %>
+          <div class='articles__article'>
+              <a class="article" href=<%= article.attributes.slug %>> 
+                
+                  <div class="article__image">
+                      <% if(article.attributes.image != null) { %>
+                        <img src=<%= article.attributes.image %> class="article__image" alt="">
+                      <% } %>
+                  </div>
+                  <div class="article__content">
+                    <h3 class="article__title"><%= article.attributes.title %></h3>
+                    <p class="article__date"><%= article.attributes.date.getDate() + '.' + (Number(article.attributes.date.getMonth()) + 1) + '.' + article.attributes.date.getFullYear() %></p>
+                  </div>
+                
+              </a>
+          </div>
+        <% }) %>
+
     </div>
 
 </section>

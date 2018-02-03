@@ -1,12 +1,38 @@
-* {
-  margin: 0;
-  padding: 0; }
-
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Lora", helvetica, arial, sans-serif; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
+
+h1, h2, h3 {
+  margin: 15px 0;
+  font-family: "Roboto", georgia, serif;
+  font-weight: 600; }
+
+.tilBaka {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 30px; }
+
+.errorTB {
+  text-align: center; }
+
+.errormsg {
+  text-align: center;
+  font-size: 3rem; }
+
+blockquote {
+  margin: 0;
+  font-style: italic; }
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90vw; }
 
 .header {
   position: relative;
@@ -14,6 +40,7 @@ html {
   min-height: 50vh;
   margin-left: -15px;
   margin-right: -15px;
+  margin-top: -15px;
   background: transparent url(header.jpg) fixed no-repeat;
   background-size: cover; }
   .header__content {
@@ -27,7 +54,7 @@ html {
   .header__title {
     margin-bottom: 45px;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 5rem;
     color: white; }
 
 .articles {
@@ -37,19 +64,14 @@ html {
   .articles__row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    /*
-        margin-right: -($gutter / 2);
-        margin-bottom: $gutter;
-        margin-left: -($gutter / 2); 
-        */ }
+    justify-content: center; }
   .articles__article {
     width: 100%;
     padding-right: 30px;
     padding-left: 30px;
     display: flex;
     justify-content: center;
-    min-height: 250px;
+    min-height: 200px;
     padding: 30px; }
     @media (min-width: 600px) {
       .articles__article {
@@ -61,7 +83,7 @@ html {
         width: 100%;
         padding-right: 30px;
         padding-left: 30px;
-        min-height: 400px; } }
+        min-height: 450px; } }
 
 .article {
   width: 100%;
@@ -81,20 +103,13 @@ html {
     display: block;
     width: 100%;
     height: 100%; }
-  .article__content {
-    /*
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: stretch;
-        flex: 1;
-        */ }
   .article__title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    margin-bottom: 10px;
-    font-size: 1.5rem; }
+    font-size: 2rem;
+    margin-bottom: 0; }
   .article__date {
-    font-size: 1.125rem; }
+    font-size: 1.5rem;
+    margin-top: 0; }

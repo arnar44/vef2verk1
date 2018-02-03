@@ -10,12 +10,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        //margin: $gutter * 2;
-        /*
-        margin-right: -($gutter / 2);
-        margin-bottom: $gutter;
-        margin-left: -($gutter / 2); 
-        */
     }
 
     &__article {
@@ -23,7 +17,7 @@
 
         display: flex;
         justify-content: center;
-        min-height: 250px;    
+        min-height: 200px;    
     
         padding: $gutter * 2;
     
@@ -34,7 +28,7 @@
     
         @media (max-width: $max-width / 2) {
           @include columns(12);
-          min-height: 400px;
+          min-height: 450px;
         }
         
     }

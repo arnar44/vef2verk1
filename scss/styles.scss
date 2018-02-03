@@ -1,15 +1,49 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
+@import 'config';
   
   html {
     box-sizing: border-box;
+    margin: 0;
+    font-family: $font-main;
   }
   
   *, *:before, *:after {
     box-sizing: inherit;
   }
+
+  h1, h2, h3 {
+    margin: $gutter 0;
+    font-family: $font-heading;
+    font-weight: 600;
+  }
+
+  .tilBaka {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 2 * $gutter;
+  }
+
+  .errorTB {
+    text-align: center;
+  }
+
+  .errormsg{
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  blockquote {
+    margin: 0;
+    font-style: italic;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90vw;
+  }
+
 
   @import 'header';
   @import 'articles';
